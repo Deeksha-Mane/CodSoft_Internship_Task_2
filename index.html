@@ -1,0 +1,211 @@
+<!--CodSoft Internship (AUG 1-AUG 31) 2024
+    Task 2: PORTFOLIO
+    Programmer: Deeksha Prashant Mane
+    Technologies Used: HTML,CSS
+    Project Description: Personal Portfolio Website creation task -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="HTML,CSS">
+    <meta name="author" content="Deeksha Prashant Mane">
+    <meta name="description" content="Personal Portfolio Website">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins&family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@100..800&family=Montserrat:wght@400;500;600&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins&family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@100..800&family=Dancing+Script:wght@400..700&family=Montserrat:wght@400;500;600&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins&family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <title>Deeksha_Mane.com</title>
+    <link rel="icon" href="my_portfolio_logo.png">
+</head>
+<body>
+    
+    <!--Navbar / Header Section-->
+    <nav>
+
+        <div id="mySidepanel" class="sidepanel">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#">About</a>
+            <a href="#">Skills</a>
+            <a href="#">Projects</a>
+            <a href="#">Contact</a>
+        </div>
+          
+        <button class="openbtn" onclick="openNav()">&#9776;</button>
+
+
+        <img src="my_portfolio_logo.png" alt="Portfolio Logo" id="my_logo" title="Deeksha_Mane.com" class="my_logo"> 
+        &nbsp;&nbsp;
+        <p id="my_name" class="my_name" title="Deeksha Mane">Deeksha Mane</p>
+        <div class="navbar">
+            <ul class="navbar_options">
+                <li class="options"><a href="#home"><b>Home</b></a></li>
+                <li class="options"><a href="#skills"><b>Skills</b></a></li>
+                <li class="options"><a href="#projects"><b>Projects</b></a></li>
+                <li class="options"><a href="#"><b>Achievements</b></a></li>
+            </ul>
+            <button type="button" id="contact">Contact Me</button>
+        </div>
+    </nav>
+
+
+    <!--About Section-->
+    <div class="about_section" id="home">
+        <div class="intro">
+
+            <h2 class="intro-h1">Hi! I'm <span id="typewriter" class="typewriter"></span></h2>
+            <h3 class="intro-h3">Web Designer and Developer</h3>
+            <br>
+            <p class="intro-p">&#128640; A <b>Full Stack Developer</b> in the Making,with a few hands-on projects using Front-End and expanding horizons in the Back-End and related Frameworks...!</p>
+            <br>
+            <p class="intro-p">&#128640; <b>Programming Polyglot</b> : C , Python, Java (ongoing) , Javascript (ongoing)</p>
+            <br><br> 
+            
+            <span class="social_media_links" title="LinkedIn Account"><a href="https://www.linkedin.com/in/deeksha-mane-6971a22b0"><img src="LinkedIn.png" alt="LinkedIn Link" class="linkedin"></a></span>
+            <span class="social_media_links1" title="GitHub Account"><a href="https://github.com/deeksha-mane"><img src="github.png" alt="Github Link" class="github"></a></span>
+            <span class="social_media_links2" title="Leetcode Account"><a href="https://leetcode.com/Deeksha_Mane01/"><img src="leetcode.png" alt="Leetcode Link" class="leetcode"></a></span>
+            <a href="Deeksha_Mane_Resume.pdf" id="resume_link" download><span id="resume" class="resume">Download my Resume</span></a>
+        </div>
+    </div> 
+
+    <div class="white-box"></div>
+
+    <!--Skills-->
+    <div class="parallax">
+        <div class="skills" id="skills">
+            <h2>What can I do ?</h2>
+            <div class="skills_container" id="skills_container1">
+                <div class="card">
+                    <img src="html logo.png" alt="HTML Logo" class="skill-img">
+                    <h4 class="card-h4">HTML: Standard Markup Language used for designing webpages.</h4>
+                    <label for="HTML">HTML</label>
+                    <input type="range" value="80" name="HTML" id="HTML" readonly>
+                </div>
+
+                <div class="card">
+                    <img src="css logo.png" alt="CSS Logo" class="skill-img">
+                    <h4 class="card-h4">CSS: Used for styling HTML Webpages</h4>
+                    <label for="CSS">CSS</label>
+                    <input type="range" value="70" name="CSS" id="CSS" readonly>
+                </div>
+
+                <div class="card">
+                    <img src="js logo.png" alt="JavaScript Logo" class="skill-img">
+                    <h4 class="card-h4">JavaScript:Used for adding functionality to the webpages.</h4>
+                    <label for="JS">JS</label>
+                    <input type="range" value="40" name="JS" id="JS" readonly>
+                </div>
+            </div>
+
+            <div class="skills_container">
+                <div class="card">
+                    <img src="python logo.jfif" alt="Python Logo" class="skill-img">
+                    <h4 class="card-h4">Python: Used for developing websites and softwares...</h4>
+                    <label for="python">Python</label>
+                    <input type="range" value="50" name="python" id="python" readonly>
+                </div>
+
+                <div class="card">
+                    <img src="c logo.png" alt="C Logo" class="skill-img">
+                    <h4 class="card-h4">C: Used for creating operating systems,animation and gaming...</h4>
+                    <label for="c">C</label>
+                    <input type="range" value="85" name="c" id="c" readonly>
+                </div>
+
+                <div class="card">
+                    <img src="java.logo.png" alt="Java Logo" class="skill-img">
+                    <h4 class="card-h4">Java: Used for app development ,game development...</h4>
+                    <label for="java">Java</label>
+                    <input type="range" value="60" name="java" id="java" readonly>
+                </div>
+            </div>
+        </div>
+
+        <!--Projects-->
+        <div class="projects" id="projects">
+            <h1>Projects</h1>
+            <div class="project_container skills_container">
+
+                <div class="project_card card">
+                    <video src="Amazon Website Video.mp4" controls class="project-video"></video><br>
+                    <!-- <img src="project 1.png" alt="Project Image" class="project-img"><br> -->
+                    <h4 class="project-title">E-Commerce Website Landing Page:</h4>
+                    <h5>Designed a captivating landing page for an e-commerce website,showcasing products and services. Utilized HTML,CSS and JavaScript to create a responsive and user-friendly interface...</h5>
+                    <button type="button" class="check-out">Check Out</button>
+                </div>
+
+                <div class="project_card  card">
+                    <video src="Codexa Video.mp4" controls class="project-video"></video>
+                    <!-- <img src="project2.png" alt="Project Image" class="project-img"> -->
+                    <h4 class="project-title">Landing Page</h4>
+                    <h5>Developed a landing page for a programming course website, aimed at attracting aspiring coders.Utilized HTML,CSS and JavaScript to create a user-friendly interface...</h5>
+                    <button type="button" class="check-out">Check Out</button>
+                </div>
+
+                <div class="project_card  card">
+                    <video src="Spotify Clone Video.mp4" controls class="project-video"></video>
+                    <!-- <img src="project3.png" alt="Project Image" class="project-img"> -->
+                    <h4 class="project-title">Spotify Clone</h4>
+                    <h5>Designed the a Spotify Clone, replicating a popular music streaming platform and its features. Built using HTML, CSS, this project demonstrates a good hold of these technologies...</h5>
+                    <button type="button" class="check-out">Check Out</button>
+                </div>
+            </div>
+
+            <button type="button" class="exp_projects">Explore</button>
+
+            <div class="project_container skills_container" id="hidden_container">
+                <div class="project_card card">
+                    <video src="Simon Say Game.mp4" controls class="project-video"></video>
+                    <h4 class="project-title">Simon Says Game</h4>
+                    <h5> Developed a web based version of the classic memory game Simon Says, showcasing expertise in Front-End Development and user interaction...</h5>
+                    <button type="button" class="check-out">Check Out</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="white-box"></div>
+
+    <!--Contact Information-->
+
+    <div class="parallax1">
+
+        <div class="contact-information" id="contact-information">
+            <div class="contact-info">
+                <h2 class="contact-h2" id="contact-h2"><u></u></h2>
+                <span id="contact-linkedin"><a href="https://www.linkedin.com/in/deeksha-mane-6971a22b0"><img src="LinkedIn.png" alt="LinkedIn Link" class="linkedin-contact"></a></span>
+                <span class="linkedin-link">https://www.linkedin.com/in/deeksha-mane-6971a22b0</span><br>
+                <span class="material-symbols-outlined">smartphone</span>
+                <span class="ph-num">(+91) 7248979524</span> <br>
+                <span class="material-symbols-outlined">mail</span>
+                <span><a href= "mailto: manediksha264@gmail.com" class="email">manediksha264@gmail.com</a></span>
+                <br>
+                <h2 class="opportunity">Open for Opportunities !!</h2>
+            </div> 
+
+            <div class="my_image">
+                <div class="img-card">
+                    <img src="my-portfolio-image-1.jpeg" alt="Owner Image" class="owner-img">
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!--Footer-->
+    <div class="footer">
+        <h2 class="copyright">Copyright &copy; 2024, Deeksha Mane</h2>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
