@@ -1,4 +1,8 @@
 # CodSoft_Internship_Task_2
+Task 2: Personal Portfolio Website
+<br>
+Technologies Used: HTML, CSS, JavaScript
+<br>
 As the 2nd task of my internship,I designed and developed a visually stunning and user-friendly portfolio website to showcase my skills,experience and accomplishments as a web developer.This website serves as my digital resume,highlighting my expertise in web-development and providing a platform to demonstrate my capabilities to potential clients and employers.
 Technologies Used: HTML, CSS, JavaScript
 The structure of the website is designed using HTML, styled by using CSS, and brought to life by JavaScript.It's a responsive website ensuring a seamless user experience across various devices and screen sizes.It also contains a skill matrix which represents my skills including HTML,CSS, JavaScript,C, Python and Java(ongoing).
